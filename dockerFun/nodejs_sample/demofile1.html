@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="cardCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<button onclick="flipCard()">Flip</button>
+<button onclick="nextCard()">Next</button>
+
+<script>
+  var cards = [{term:"term0", def:"def0"},
+			{term:"term1", def:"def1"},
+			{term:"term2", def:"def2"}]; 
+  var currentCardIdx = -1;
+  var c = document.getElementById("cardCanvas");
+  var ctx = c.getContext("2d");
+  ctx.font = "30px Arial";
+  nextCard();
+
+  function flipCard() {
+    clearCard();
+    ctx.fillText(cards[currentCardIdx].def,10,50);	
+  }
+    
+  function nextCard() {
+    currentCardIdx += 1;
+    if( currentCardIdx >= cards.length ) 
+      currentCardIdx = 0;
+    clearCard();
+    ctx.fillText(cards[currentCardIdx].term,10,50);
+  }
+
+  function clearCard() {
+    ctx.fillStyle='white';
+    ctx.fillRect(10,10,150,80); 
+    ctx.fillStyle='black';
+  }
+
+</script>
+
+</body>
+</html>

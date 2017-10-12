@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+.vs
+CharpCompare/bin
+CharpCompare/obj
+CompCSharpDLL/bin
+CompCSharpDLL/obj
+CompareUI/bin
+CompareUI/obj
+*.csproj.user
