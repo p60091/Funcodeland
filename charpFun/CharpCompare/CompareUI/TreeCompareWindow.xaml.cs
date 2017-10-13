@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CompCSharpDLL;
 
 
 namespace CompareUI
@@ -24,12 +25,13 @@ namespace CompareUI
         public TreeCompareWindow()
         {
             InitializeComponent();
+           
         }
 
-        public void SetTree(string left, string right)
+        public void SetTree(CSharpParser left, CSharpParser right)
         {
-            this.tvLeft.ItemsSource = left;
-            this.tvRight.ItemsSource = right;
+            this.tvLeft.Items.Add(left.Root());
+            this.tvRight.Items.Add(right.Root());
         }
     }
 }

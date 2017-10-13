@@ -24,7 +24,7 @@ namespace CompareUI
         {
             bool startup_error = false;
 
-            TextCompareWindow wnd = new TextCompareWindow();
+            TreeCompareWindow wnd = new TreeCompareWindow();
         
             for (int i = 0; i < e.Args.Length; i++)
             {
@@ -66,7 +66,7 @@ namespace CompareUI
                 } 
             }
 
-            wnd.SetText(ref_in, com_in);
+            wnd.SetTree(ref_csp, com_csp);
             wnd.Show();
         }
     }
