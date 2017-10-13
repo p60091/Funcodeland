@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareUI", "CompareUI\Comp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompCSharpDLL", "CompCSharpDLL\CompCSharpDLL.csproj", "{28CD14E5-B33F-460A-9AAA-DAB906AD7D32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareInterfaces", "CompareInterfaces\CompareInterfaces.csproj", "{BA8209D2-5300-4E1B-84CB-00D306D93391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{28CD14E5-B33F-460A-9AAA-DAB906AD7D32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{28CD14E5-B33F-460A-9AAA-DAB906AD7D32}.Release|x86.ActiveCfg = Release|Any CPU
 		{28CD14E5-B33F-460A-9AAA-DAB906AD7D32}.Release|x86.Build.0 = Release|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Debug|x86.Build.0 = Debug|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Release|x86.ActiveCfg = Release|Any CPU
+		{BA8209D2-5300-4E1B-84CB-00D306D93391}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

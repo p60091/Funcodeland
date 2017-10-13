@@ -25,12 +25,11 @@ namespace CompareUI
         public TreeCompareWindow()
         {
             InitializeComponent();
-           
         }
 
         public void SetTree(CSharpParser left, CSharpParser right)
         {
-            this.tvLeft.Items.Add(left.Root());
+            this.tvLeft.Items.Add(left.Root());    
             this.tvRight.Items.Add(right.Root());
         }
     }

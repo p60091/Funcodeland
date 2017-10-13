@@ -6,4 +6,6 @@ CompCSharpDLL/bin
 CompCSharpDLL/obj
 CompareUI/bin
 CompareUI/obj
+CompareInterfaces/bin
+CompareInterfaces/obj
 *.csproj.user
