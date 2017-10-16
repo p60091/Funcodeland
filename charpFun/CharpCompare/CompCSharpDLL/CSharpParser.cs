@@ -101,9 +101,34 @@ namespace CompCSharpDLL
                 if (node == null)
                     return trivia.ToString();
 
+                if (node.IsKind(SyntaxKind.ClassDeclaration))
+                {
+                    return ((ClassDeclarationSyntax)node).Identifier.ToString();
+                }
+
                 if (node.IsKind(SyntaxKind.AttributeTargetSpecifier))
                 {
                     return ((AttributeTargetSpecifierSyntax)node).Identifier.ToString();
+                }
+
+                if (node.IsKind(SyntaxKind.MethodDeclaration))
+                {
+                    return ((MethodDeclarationSyntax)node).Identifier.ToString();
+                }
+
+                if (node.IsKind(SyntaxKind.Parameter))
+                {
+                    return ((ParameterSyntax)node).Identifier.ToString();
+                }
+
+                if (node.IsKind(SyntaxKind.PredefinedType))
+                {
+                    return ((PredefinedTypeSyntax)node).ToString();
+                }
+
+                if (node.IsKind(SyntaxKind.VariableDeclarator))
+                {
+                    return ((VariableDeclaratorSyntax)node).Identifier.ToString();
                 }
 
                 //else if (node.IsKind(SyntaxKind.Attribute))
@@ -129,8 +154,7 @@ namespace CompCSharpDLL
 
 
                 else if (node.IsKind(SyntaxKind.QualifiedName) ||
-                    node.IsKind(SyntaxKind.IdentifierName) ||
-                    node.IsKind(SyntaxKind.VariableDeclarator) )
+                    node.IsKind(SyntaxKind.IdentifierName) )
                 {
                     return node.ToString();
                 }
@@ -142,6 +166,13 @@ namespace CompCSharpDLL
                     return retval.Substring(0,retval.Length-2);
 
                 }
+
+                else if (node.IsKind(SyntaxKind.NumericLiteralExpression))
+                {
+                    return node.ToString();
+                }
+
+
 
                 return "";
 

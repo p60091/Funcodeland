@@ -1,0 +1,22 @@
+InterfaceDeclaration
+TypeParameter
+DelegateDeclaration
+TypeParameterConstraintClause
+StructContraint
+ClassDeclaration
+	public/private unsafe partial
+MethodDeclaration
+	public/private static virtual override abstract
+ConstructorDeclaration
+	public/private static
+FieldDeclaration
+	public/private
+VariableDeclaration
+	const
+LabeledStatement
+InterpolationAlignmantClause
+InterpolationFormatClause
+InterpolatedStringExpression
+InterpolatedStringText
+
+
